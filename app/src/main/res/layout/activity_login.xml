@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="76dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="295dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/unsia" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="237dp"
+        android:layout_height="198dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="74dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/loginlogo" />
+
+    <EditText
+        android:id="@+id/EditTextUsername"
+        android:layout_width="274dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Masukan Username"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/EditTextPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/EditTextPassword"
+        android:layout_width="273dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="Masukan Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextUsername" />
+
+    <Button
+        android:id="@+id/ButtonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="185dp"
+        android:text="Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
